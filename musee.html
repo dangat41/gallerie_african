@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musée</title>
+    <link rel="stylesheet" href="musee.css">
+</head>
+<body>
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <img src="https://i.pinimg.com/736x/5f/0b/f3/5f0bf3321d8bad1ec8dedc873fc113de.jpg" alt="logo">
+                <h1>GALERIE AFRIKA</h1>
+            </div>
+
+            <div class="nav-links">
+
+                <ul>
+                    <li><a href="./musee.html">Accueil</a></li>
+                    <li><a href="./collection-musee.html">Collection</a></li>
+                    <li><a href="./empure-musee.html">Empure</a></li>
+                    <li><a href="./histoire-musee.html">Histoire</a></li>
+                    <li><a href="./source-musee.html">Ressource</a></li>
+                </ul>
+
+            </div>
+            <img src="./img-musee/menu.png" alt="menu-humbuger" class="menu-humbuger">
+            
+
+            <div class="musee">
+                <a href="#">MUSEE D'AFRIQUE</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="accueil">
+
+            <div class="titre">
+                <h1>
+                    BIENVENUE SUR
+                    <br>
+                    LE C0NTINENT AFRICAIN
+                </h1>
+            </div>
+
+            <div class="presentation">
+
+                <div class="collection">
+                    <img src="./img-musee/img-art-antique.jpg" alt="image">
+                    <h2>EVENEMENT</h2>
+                    <a href="#">EN SAVOIR PLUS</a>
+                </div>
+
+                <div class="collection">
+                    <img src="./img-musee/img-art-antique.jpg" alt="image">
+                    <h2>NOS OEUVRES</h2>
+                    <a href="#">VOIR LES OEUBRES</a>
+                </div>
+
+                <div class="collection">
+                    <img src="./img-musee/img-art-antique.jpg" alt="image">
+                    <h2>PEUPLE</h2>
+                    <a href="#">EN SAVOIR PLUS</a>
+                </div>
+
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer>
+
+        <p>copyright 2025 <a href="https://www.instagram.com/gatembodan.of/?__pwa=1#">GATEMBO NGUNGU Dan</a> site web collection d'afrique</p>
+
+    </footer>
+
+</body>
+
+    <script>
+
+        const menuhumbuger = document.querySelector(".menu-humbuger")
+        const navlinks = document.querySelector(".nav-links")
+
+        menuhumbuger.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+    </script>
+
+</html>

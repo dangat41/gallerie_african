@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*POUR STYLISE L'EN TETE*/
+header nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+header nav .logo {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+header nav .logo h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+header nav .logo img {
+    width: 2em;
+    height: 2em;
+    border-radius: 3em;
+}
+
+header nav .liste {
+    width: 400px;
+    background: transparent;
+    border-radius: 2em;
+}
+
+header nav .liste ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav .liste ul li {
+    display: block;
+}
+
+header nav .liste ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+
+header nav .liste ul li a:hover {
+    color: brown;
+    border-bottom: 2px solid brown;
+}
+
+header nav .menu-humbuger {
+    display: none;
+    width: 35px;
+    position: absolute;
+    right: 200px;
+}
+
+header nav .musee {
+   padding: 10px;
+   background: brown;
+   border-radius: 2em;
+}
+
+header nav .musee a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header nav .musee:hover {
+    background: rgb(213, 118, 118);
+}
+
+header nav .musee a:hover {
+    letter-spacing: 2px;
+}
+
+/*POUR STYLISE LE CORPS*/
+
+.presentation {
+    width: 100%;
+    height: 50vh;
+    background: url(./img-musee/accueil-hist.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.presentation .titre {
+    display: block;
+}
+
+.presentation .titre h1 {
+    padding: 30px 0px;
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.presentation .titre p {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.apropos {
+    width: 100%;
+    padding: 100px 100px 0 100px;
+}
+.apropos .bloque1 {
+    padding: 20px 0px;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.apropos .bloque1 .image1 {
+    width: 50%;
+}
+
+.apropos .bloque1 .image1 img {
+    width: 100%;
+    height: 350px;
+}
+
+.apropos .bloque1 .texte {
+    width: 50%;
+}
+
+.apropos .bloque1 .texte h2 {
+    margin: 30px 0px;
+}
+
+.apropos .bloque1 .texte p {
+    font-size: 1em;
+    margin: 20px 0px;
+}
+
+.apropos .bloque2 {
+    padding: 20px 0px;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.apropos .bloque2 .image2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.apropos .bloque2 .image2 img {
+    width: 60%;
+    height: 400px;
+}
+
+
+
+.apropos .bloque2 .texte {
+    width: 50%;
+}
+
+.apropos .bloque2 .texte h2 {
+    margin: 30px 0px;
+}
+
+.apropos .bloque2 .texte p {
+    font-size: 1em;
+    margin: 20px 0px;
+}
+
+.volume {
+    display: block;
+    width: 100%;
+    padding: 0px 100px;
+}
+
+.volume .livre {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.volume .livre .image {
+    width: 20%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(180, 180, 180, 0.912);
+    border-radius: 1em;
+}
+
+.volume .livre .image img {
+    width: 140px;
+}
+
+.volume .livre .texte {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.volume .livre .texte h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.volume .livre .texte p {
+    margin-bottom: 15px;
+}
+
+.volume .livre .texte p span {
+    font-weight: bold;
+}
+
+.volume .livre .enligne {
+    width: 20%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.volume .livre .enligne a {
+    text-decoration: none;
+    color: brown;
+    padding: 10px;
+    border: 1px solid brown;
+    border-radius: 1.5em;
+    margin-top: 90%;
+}
+
+
