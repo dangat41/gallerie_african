@@ -6,17 +6,21 @@
 
 body {
     color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 /*POUR STYLISE L'EN TETE*/
-header nav {
+
+header {
     width: 100%;
+    padding:  20px 40px;
     position: fixed;
+}
+header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
 }
 
 header nav .logo {
@@ -36,13 +40,12 @@ header nav .logo img {
     border-radius: 3em;
 }
 
-header nav .nav-links {
-    width: 400px;
+header nav .navbarre {
     background: transparent;
     border-radius: 2em;
 }
 
-header nav .nav-links ul {
+header nav .navbarre ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,11 +53,11 @@ header nav .nav-links ul {
     gap: 30px;
 }
 
-header nav .nav-links ul li {
+header nav .navbarre ul li {
     display: block;
 }
 
-header nav .nav-links ul li a {
+header nav .navbarre ul li a {
     text-decoration: none;
     color: white;
     font-size: 1.2em;
@@ -62,40 +65,11 @@ header nav .nav-links ul li a {
 }
 
 
-header nav .nav-links ul li a:hover {
+header nav .navbarre ul li a:hover {
     color: brown;
     border-bottom: 2px solid brown;
 }
 
-header nav .menu-humbuger {
-    display: none;
-    width: 35px;
-    position: absolute;
-    right: 200px;
-}
-
-
-header nav .musee {
-   padding: 10px;
-   background: brown;
-   border-radius: 2em;
-}
-
-header nav .musee a {
-    text-decoration: none;
-    color: white;
-    font-size: 1em;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-header nav .musee:hover {
-    background: rgb(213, 118, 118);
-}
-
-header nav .musee a:hover {
-    letter-spacing: 2px;
-}
 
 /*POUR STYLISE L'ACCUEIL*/
 #accueil {
@@ -192,9 +166,14 @@ footer p a:hover {
     color: rgb(242, 197, 197);
 }
 
+
+
 /*POUR STYLISER L'EN TETE*/
 
 @media screen and (max-width: 400px) {
+    header {
+        padding: 10px;
+    }
 
     header nav {
         padding: 0px;
@@ -210,7 +189,27 @@ footer p a:hover {
         height: 1.5em;
     }
 
-    header nav .nav-links {
+    .menutoglle {
+        width: 40px;
+        height: 40px;
+        background: url(./img-musee/menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menutoglle.active {
+        background: url(./img-musee/close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header.sticky .menutoglle{
+        filter: invert(1);
+    }
+
+    header nav .navbarre {
         position: absolute;
         width: 100%;
         height: 100vh;
@@ -226,32 +225,14 @@ footer p a:hover {
         transition: all 0.5s ease;
     }
 
-    header nav .nav-links ul {
+    header nav .navbarre ul {
         flex-direction: column;
         gap: 50px;
     }
 
-    header nav .nav-links ul li a {
+    header nav .navbarre ul li a {
         font-size: 2em;
     }
-
-    header nav .menu-humbuger {
-        display: block;
-    }
-
-    header nav .nav-links .mobile-menu {
-        margin-left: 0;
-    }
-
-    header nav .musee {
-        padding: 5px;
-    }
-
-    header nav .musee a {
-        font-size: 0.5em;
-        letter-spacing: -1px;
-    }
-
 }
 
 
