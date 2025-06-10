@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*POUR STYLISE L'EN TETE*/
+
+header {
+    width: 100%;
+    padding:  20px 40px;
+    position: fixed;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+header nav .logo h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+header nav .logo img {
+    width: 2em;
+    height: 2em;
+    border-radius: 3em;
+}
+
+header nav .navbarre {
+    background: transparent;
+    border-radius: 2em;
+}
+
+header nav .navbarre ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav .navbarre ul li {
+    display: block;
+}
+
+header nav .navbarre ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+
+header nav .navbarre ul li a:hover {
+    color: brown;
+    border-bottom: 2px solid brown;
+}
+
+/*POUR STYLISE LE CORPS*/
+
+.presentation {
+    width: 100%;
+    height: 70vh;
+    background: url(./img-musee/empire.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.presentation .titre {
+    display: block;
+}
+
+.presentation .titre h1 {
+    padding: 30px 0px;
+    color: white;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.presentation .titre p {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.apropos {
+    width: 100%;
+    padding: 100px 100px 0 100px;
+}
+.apropos .bloque1 {
+    padding: 20px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.apropos .bloque1 .image1 {
+    width: 50%;
+}
+
+.apropos .bloque1 .image1 img {
+    width: 100%;
+    height: 350px;
+}
+
+.apropos .bloque1 .texte {
+    width: 50%;
+}
+
+.apropos .bloque1 .texte h2 {
+    margin: 30px 0px;
+}
+
+.apropos .bloque1 .texte p {
+    font-size: 1em;
+    margin: 20px 0px;
+}
+
+.apropos .bloque1 .texte p span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+.empire {
+    width: 100%;
+    padding: 0px 160px;
+}
+
+.empire .sujet {
+    padding: 20px 0px;
+    border-bottom: 1px solid black;
+}
+
+.empire .sujet h2 {
+    margin-bottom: 30px;
+}
+
+.empire .sujet .ghana {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.empire .sujet .ghana img {
+    width: 600px;
+    height: 400Px;
+}
+
+.empire .sujet p {
+    margin-bottom: 20px;
+}
+
+.empire .sujet .site {
+    display: flex;
+    justify-content: right;
+}
+
+.empire .sujet .site a {
+    text-decoration: none;
+    color: brown;
+    padding: 10px;
+    border: 1px solid brown;
+    border-radius: 1.5em;
+}
+
+/*POUR STYLISER LE PIED*/
+footer {
+    width: 100%;
+    height: 3.5vh;
+    background: rgb(180, 79, 79);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    font-style: italic;
+}
+
+footer p a:hover {
+    color: rgb(242, 197, 197);
+}
