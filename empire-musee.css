@@ -102,7 +102,7 @@ header nav .navbarre ul li a:hover {
 
 .apropos {
     width: 100%;
-    padding: 100px 100px 0 100px;
+    padding: 100px 100px 0px 100px;
 }
 .apropos .bloque1 {
     padding: 20px 0px;
@@ -112,15 +112,6 @@ header nav .navbarre ul li a:hover {
     align-items: center;
     justify-content: center;
     gap: 20px;
-}
-
-.apropos .bloque1 .image1 {
-    width: 50%;
-}
-
-.apropos .bloque1 .image1 img {
-    width: 100%;
-    height: 350px;
 }
 
 .apropos .bloque1 .texte {
@@ -140,6 +131,16 @@ header nav .navbarre ul li a:hover {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
 }
+
+.apropos .bloque1 .image1 {
+    width: 50%;
+}
+
+.apropos .bloque1 .image1 img {
+    width: 100%;
+    height: 350px;
+}
+
 
 .empire {
     width: 100%;
@@ -208,4 +209,121 @@ footer p a {
 
 footer p a:hover {
     color: rgb(242, 197, 197);
+}
+
+/*POUR STYLISER L'EN TETE*/
+
+@media screen and (max-width: 400px) {
+
+    header {
+        padding: 10px;
+    }
+    
+    header nav .navbarre {
+        display: none;
+    }
+
+      header nav .logo h1 {
+        font-size: 1em;
+        letter-spacing: -1px;
+    }
+
+    header nav .logo img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+}
+
+
+/*POUR STYLISER LE CORP*/
+
+@media screen and (max-width: 400px) {
+    .presentation {
+        height: 50vh;
+        padding: 20px;
+    }
+
+    .presentation .titre h1 {
+        font-size: 2em;
+    }
+
+    .presentation .titre p {
+        font-size: 0.7em;
+        font-size: 1em;
+    }
+
+    .apropos {
+        padding: 20px 20px 0px 20px;
+    }
+
+    .apropos .bloque1 {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .apropos .bloque1 .texte {
+        width: 100%;
+    }
+
+    .apropos .bloque1 .texte h2 {
+        margin: 15px 0px;
+    }
+
+    .apropos .bloque1 .texte p {
+        font-size: 0.7em;
+        margin: 10px 0px;
+    }
+
+    .apropos .bloque1 .image1 {
+        width: 100%;
+    }
+
+    .apropos .bloque1 .image1 img {
+        height: 200px;
+    }
+
+    .empire {
+        padding: 0px 20px;
+    }
+
+    .empire .sujet {
+        padding: 10px 0px;
+    }
+
+    .empire .sujet h2 {
+        margin-bottom: 15Px;
+    }
+
+    .empire .sujet .ghana img {
+        width: 100%;
+        height: 200Px;
+    }
+
+    .empire .sujet p {
+        font-size: 0.7em;
+        margin-bottom: 10px;
+    }
+
+    .empire .sujet .site a {
+        padding: 5px;
+        font-size: 0.6em;
+        font-weight: 900;
+    }
+
+}
+
+/*POUR STYLISER LE PIED*/
+
+@media screen and (max-width: 400px) {
+    
+    footer {
+        height: 3.5%;
+    }
+
+    footer p {
+        font-size: 0.8em;
+        letter-spacing: -1px;
+    }
+
 }
