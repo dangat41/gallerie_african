@@ -23,21 +23,29 @@ header nav {
     justify-content: space-between;
 }
 
+header nav button {
+    display: none;
+    background: transparent;
+    font-size: 2em;
+    border: none;
+    color: white;
+}
+
 header nav .logo {
     color: white;
     display: flex;
     align-items: center;
 }
 
-header nav .logo h1 {
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
 header nav .logo img {
     width: 2em;
     height: 2em;
     border-radius: 3em;
+}
+
+header nav .logo h1 {
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 header nav .navbarre {
@@ -70,8 +78,74 @@ header nav .navbarre ul li a:hover {
     border-bottom: 2px solid brown;
 }
 
+#navbarre {
+    display:none;
+    flex-direction: row;
+    align-items: start;
+    background-color:rgba(0, 0, 1, 0.562);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    padding: 10px 20px;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+}
 
-/*POUR STYLISE L'ACCUEIL*/
+.menucacher {
+    background-color: white;
+    height: 100%;
+    padding: 10px;
+    width: 300px;
+    padding-top: 0;
+    font-size: 18px;
+}
+
+.liste {
+    list-style: none;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 35px;
+    gap: 20px;
+}
+
+.liste a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 900;
+
+}
+
+.liste a:hover {
+    color: brown;
+    border-bottom: 1.2px solid brown;
+}
+
+.suite .listes {
+    margin-top: 20px;
+    gap: 20px;
+    border-bottom: none;
+}
+
+.suite .listes .liste a {
+    text-decoration: none;
+    color: brown;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.suite .listes .liste a:hover {
+    color: gray;
+    border-bottom: 1.2px solid gray;
+}
+
+
+/*POUR STYLISE LE CORPS*/
 #accueil {
     max-width: 100%;
     height: 96.5vh;
@@ -179,6 +253,11 @@ footer p a:hover {
         padding: 0px;
     }
 
+    header nav button {
+        display: block;
+        font-size: 1.5em;
+    }
+
     header nav .logo h1 {
         font-size: 1em;
         letter-spacing: -1px;
@@ -189,50 +268,24 @@ footer p a:hover {
         height: 1.5em;
     }
 
-    .menutoglle {
-        width: 40px;
-        height: 40px;
-        background: url(./img-musee/menu.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
+    .menucacher {
+        width: 200px;
     }
 
-    .menutoglle.active {
-        background: url(./img-musee/close.png);
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
+    .listes {
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
     }
 
-    header.sticky .menutoglle{
-        filter: invert(1);
+    .liste a {
+        font-size: 1em;
+        font-weight: 500;
     }
 
     header nav .navbarre {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(43, 1, 1, 0.299);
-        backdrop-filter: blur(7px);
-        border-radius: 0px;
-        top: 0px;
-        left: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -100%;
-        transition: all 0.5s ease;
+        display: none;
     }
 
-    header nav .navbarre ul {
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    header nav .navbarre ul li a {
-        font-size: 2em;
-    }
 }
 
 

@@ -23,21 +23,29 @@ header nav {
     justify-content: space-between;
 }
 
+header nav button {
+    display: none;
+    background: transparent;
+    font-size: 2em;
+    border: none;
+    color: white;
+}
+
 header nav .logo {
     color: white;
     display: flex;
     align-items: center;
 }
 
-header nav .logo h1 {
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
 header nav .logo img {
     width: 2em;
     height: 2em;
     border-radius: 3em;
+}
+
+header nav .logo h1 {
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 header nav .navbarre {
@@ -68,6 +76,72 @@ header nav .navbarre ul li a {
 header nav .navbarre ul li a:hover {
     color: brown;
     border-bottom: 2px solid brown;
+}
+
+#navbarre {
+    display:none;
+    flex-direction: row;
+    align-items: start;
+    background-color:rgba(0, 0, 1, 0.562);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    padding: 10px 20px;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+}
+
+.menucacher {
+    background-color: white;
+    height: 100%;
+    padding: 10px;
+    width: 300px;
+    padding-top: 0;
+    font-size: 18px;
+}
+
+.liste {
+    list-style: none;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 35px;
+    gap: 20px;
+}
+
+.liste a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 900;
+
+}
+
+.liste a:hover {
+    color: brown;
+    border-bottom: 1.2px solid brown;
+}
+
+.suite .listes {
+    margin-top: 20px;
+    gap: 20px;
+    border-bottom: none;
+}
+
+.suite .listes .liste a {
+    text-decoration: none;
+    color: brown;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.suite .listes .liste a:hover {
+    color: gray;
+    border-bottom: 1.2px solid gray;
 }
 
 /*POUR STYLISE LE CORPS*/
@@ -214,16 +288,20 @@ footer p a:hover {
 /*POUR STYLISER L'EN TETE*/
 
 @media screen and (max-width: 400px) {
-
     header {
         padding: 10px;
     }
-    
-    header nav .navbarre {
-        display: none;
+
+    header nav {
+        padding: 0px;
     }
 
-      header nav .logo h1 {
+    header nav button {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    header nav .logo h1 {
         font-size: 1em;
         letter-spacing: -1px;
     }
@@ -231,6 +309,24 @@ footer p a:hover {
     header nav .logo img {
         width: 1.5em;
         height: 1.5em;
+    }
+
+    .menucacher {
+        width: 200px;
+    }
+
+    .listes {
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .liste a {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    header nav .navbarre {
+        display: none;
     }
 
 }
