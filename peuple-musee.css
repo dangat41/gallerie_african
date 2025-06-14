@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*POUR STYLISE L'EN TETE*/
+
+header {
+    width: 100%;
+    padding:  20px 40px;
+    position: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav button {
+    display: none;
+    background: transparent;
+    font-size: 2em;
+    border: none;
+    color: black;
+}
+
+header nav .logo {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+header nav .logo h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+header nav .logo img {
+    width: 2em;
+    height: 2em;
+    border-radius: 3em;
+}
+
+header nav .navbarre {
+    background: transparent;
+    border-radius: 2em;
+}
+
+header nav .navbarre ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav .navbarre ul li {
+    display: block;
+}
+
+header nav .navbarre ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+
+header nav .navbarre ul li a:hover {
+    color: brown;
+    border-bottom: 2px solid brown;
+}
+
+#navbarre {
+    display:none;
+    flex-direction: row;
+    align-items: start;
+    background-color:rgba(0, 0, 1, 0.562);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    padding: 10px 20px;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+}
+
+.menucacher {
+    background-color: white;
+    height: 100%;
+    padding: 10px;
+    width: 300px;
+    padding-top: 0;
+    font-size: 18px;
+}
+
+.liste {
+    list-style: none;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 35px;
+    gap: 20px;
+}
+
+.liste a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.liste a:hover {
+    color: brown;
+    border-bottom: 1.2px solid brown;
+}
+
+.suite .listes {
+    margin-top: 20px;
+    gap: 20px;
+    border-bottom: none;
+}
+
+.suite .listes .liste a {
+    text-decoration: none;
+    color: brown;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.suite .listes .liste a:hover {
+    color: gray;
+    border-bottom: 1.2px solid gray;
+}
+
+/*POUR STYLISER LE CORP*/
+
+main {
+    width: 100%;
+    padding: 50px 350px 0px 350px;
+}
+
+.accueil {
+    width: 100%;
+    padding: 30px 0px;
+    border-bottom: 1px solid black;
+}
+
+.accueil h1 {
+    font-size: 2em;
+    margin: 20px 0px;
+}
+
+.accueil .oeuvre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accueil .oeuvre .hauteur {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.accueil .oeuvre .hauteur img {
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+}
+
+.accueil .oeuvre .hauteur p {
+    font-size: 0.8em;
+    font-weight: 900;
+}
+
+.accueil .oeuvre .hauteur p span {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.accueil .oeuvre .image {
+    width: 800px;
+}
+
+.accueil .oeuvre .image img {
+    width: 100%;
+    height: 350px;
+}
+
+.presentation {
+    width: 100%;
+    padding: 30px 0px 5px 0px;
+    border-bottom: 1px solid black;
+}
+
+.presentation p {
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.presentation {
+    width: 100%;
+    padding: 30px 0px;
+    padding: 30px 0px 5px 0px;
+}
+
+.presentation .langue {
+    margin-bottom: 25px;
+}
+
+.presentation .langue h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.presentation .langue p {
+    font-weight: 400;
+}
+
+.presentation .langue p span {
+    font-style: italic;
+}
+
+/*POUR STYLISER LE PIED*/
+footer {
+    width: 100%;
+    height: 3.5vh;
+    background: rgb(180, 79, 79);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    font-style: italic;
+}
+
+footer p a:hover {
+    color: rgb(242, 197, 197);
+}
+
+
+
+/*POUR STYLISER L'EN TETE*/
+
+@media screen and (max-width: 400px) {
+    header {
+        padding: 10px;
+    }
+
+    header nav {
+        padding: 0px;
+    }
+
+    header nav button {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    header nav .logo h1 {
+        font-size: 1em;
+        letter-spacing: -1px;
+    }
+
+    header nav .logo img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    header nav .navbarre {
+        display: none;
+    }
+
+    .menucacher {
+        width: 200px;
+    }
+
+    .listes {
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .liste a {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .suite .listes .liste a {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        padding: 20px 20px 0 20px;
+    }
+
+    .accueil h1 {
+        font-size: 1.3em;
+    }
+
+    .accueil .oeuvre .hauteur img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .accueil .oeuvre .hauteur p {
+        font-size: 0.6em;
+    }
+
+    .accueil .oeuvre .image {
+        width: 100%;
+    }
+
+    .accueil .oeuvre .image img {
+        height: 200px;
+    }
+
+    .presentation p {
+        font-size: 0.7em;
+    }
+
+    .presentation .langue h2 {
+        font-size: 1em;
+    }
+
+    .presentation .langue p {
+        font-size: 0.7em;
+    }
+}
+
+/*POUR STYLISER LE PIED*/
+
+@media screen and (max-width: 400px) {
+    
+    footer {
+        height: 3.5%;
+    }
+
+    footer p {
+        font-size: 0.8em;
+        letter-spacing: -1px;
+    }
+
+}
