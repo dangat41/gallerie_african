@@ -434,23 +434,32 @@ footer p a:hover {
         width: 100%;
     }
 
+    .apropos .bloque1 .image1 img {
+        height: 250px;
+    }
+
     .apropos .bloque1 .texte {
         width: 100%;
     }
 
+    .apropos .bloque1 .texte h2 {
+        font-size: 1em;
+    }
+
     .apropos .bloque1 .texte p {
+        font-size: 0.7em;
         margin: 10px 0px;
     }
 
     .apropos .bloque2 {
+        font-size: 1em;
         padding: 5px 0px;
         flex-direction: column;
     }
 
     .apropos .bloque2 .image2 {
         width: 100%;
-        position: relative;
-        top: 655px;
+        display: none;
     }
 
     .apropos .bloque2 .image2 img {
@@ -460,8 +469,6 @@ footer p a:hover {
 
     .apropos .bloque2 .texte {
         width: 100%;
-        position: relative;
-        bottom: 430px;
     }
 
     .apropos .bloque2 .texte h2 {
@@ -469,6 +476,7 @@ footer p a:hover {
     }
 
     .apropos .bloque2 .texte p {
+        font-size: 0.7em;
         margin: 10px 0px;
     }
 
@@ -481,10 +489,12 @@ footer p a:hover {
     }
 
     .info .bloque h2 {
+        font-size: 1em;
         margin-bottom: 15px;
     }
 
     .info .bloque p {
+        font-size: 0.7em;
         margin-bottom: 5px;
     }
 
@@ -508,10 +518,12 @@ footer p a:hover {
     }
 
     .volume .livre .texte h3 {
+        font-size: 1em;
         margin-bottom: 8px;
     }
 
     .volume .livre .texte p {
+        font-size: 0.7em;
         margin-bottom: 8px;
     }
 
@@ -525,6 +537,7 @@ footer p a:hover {
     }
 
     .volume .livre .enligne a {
+        font-size: 0.7em;
         margin-top: 0px;
     }
 
