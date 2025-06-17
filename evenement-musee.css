@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*POUR STYLISE L'EN TETE*/
+
+header {
+    width: 100%;
+    padding:  20px 40px;
+    position: fixed;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav button {
+    display: none;
+    background: transparent;
+    font-size: 2em;
+    border: none;
+    color: black;
+}
+
+header nav .logo {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+header nav .logo img {
+    width: 2em;
+    height: 2em;
+    border-radius: 3em;
+}
+
+header nav .logo h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+header nav .navbarre {
+    background: transparent;
+    border-radius: 2em;
+}
+
+header nav .navbarre ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav .navbarre ul li {
+    display: block;
+}
+
+header nav .navbarre ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+
+header nav .navbarre ul li a:hover {
+    color: brown;
+    border-bottom: 2px solid brown;
+}
+
+#navbarre {
+    display:none;
+    flex-direction: row;
+    align-items: start;
+    background-color:rgba(0, 0, 1, 0.562);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    padding: 10px 20px;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+}
+
+.menucacher {
+    background-color: white;
+    height: 100%;
+    padding: 10px;
+    width: 300px;
+    padding-top: 0;
+    font-size: 18px;
+}
+
+.liste {
+    list-style: none;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 35px;
+    gap: 20px;
+}
+
+.liste a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 900;
+
+}
+
+.liste a:hover {
+    color: brown;
+    border-bottom: 1.2px solid brown;
+}
+
+.suite .listes {
+    margin-top: 20px;
+    gap: 20px;
+    border-bottom: none;
+}
+
+.suite .listes .liste a {
+    text-decoration: none;
+    color: brown;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.suite .listes .liste a:hover {
+    color: gray;
+    border-bottom: 1.2px solid gray;
+}
+
+
+/*POUR STYLISE LE CORPS*/
+.presentation {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation .titre {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: -100px;
+}
+
+.presentation .titre h1 {
+    font-size: 6em;
+}
+
+.presentation .titre p {
+    font-size: 1.3em;
+}
+
+.proposition {
+    width: 100%;
+    height: 10vh;
+    padding: 10px 50px;
+}
+
+.proposition .chapitre {
+    border-top: 1px solid black;
+}
+
+.proposition .chapitre ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 40px;
+}
+
+.proposition .chapitre ul li {
+    padding: 25px;
+    border: 1px dashed black;
+}
+
+.proposition .chapitre ul li a {
+    text-decoration: none;
+    color: rgb(87, 86, 86);
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.proposition .chapitre ul li a:hover {
+    color: brown;
+    border-bottom: 1.25px solid brown;
+}
+
+.apropos {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.apropos .photo {
+    width: 100%;
+    height: 80vh;
+}
+
+.apropos .photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.apropos .contenu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apropos .contenu .bloque {
+    width: 50%;
+    width: 110vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px;
+}
+
+.apropos .contenu .bloque .style {
+    width: 10em;
+    height: 10em;
+}
+
+.apropos .contenu .bloque .style img {
+    width: 100%;
+    height: 100%;
+}
+
+.apropos .contenu .bloque .texte {
+    padding: 40px;
+    text-align: center;
+}
+
+.apropos .contenu .bloque .texte p {
+    font-size: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.apropos .contenu .bloque .texte p span {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.apropos .contenu .image {
+    width: 50%;
+    height: 110vh;
+}
+
+.apropos .contenu .image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*POUR STYLISER LE PIED*/
+footer {
+    width: 100%;
+    height: 3.5vh;
+    background: rgb(180, 79, 79);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    font-style: italic;
+}
+
+footer p a:hover {
+    color: rgb(242, 197, 197);
+}
+
+
+
+/*POUR STYLISER L'EN TETE*/
+
+@media screen and (max-width: 400px) {
+    header {
+        padding: 10px;
+    }
+
+    header nav {
+        padding: 0px;
+    }
+
+    header nav button {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    header nav .logo h1 {
+        font-size: 1em;
+        letter-spacing: -1px;
+    }
+
+    header nav .logo img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .menucacher {
+        width: 200px;
+    }
+
+    .listes {
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .liste a {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    header nav .navbarre {
+        display: none;
+    }
+
+}
+
+
+/* POUR LE CORPS */
+@media screen and (max-width: 400px) {
+
+    .presentation {
+        height: 30vh;
+    }
+
+    .presentation .titre {
+        padding: 5px;
+    }
+
+    .presentation .titre h1 {
+        font-size: 2.4em;
+    }
+
+    .presentation .titre p {
+        font-size: 1em;
+    }
+
+    .proposition {
+        padding: 10px 20px;
+    }
+
+    .proposition .chapitre ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .proposition .chapitre ul li {
+        padding: 7px;
+    }
+
+    .proposition .chapitre ul li a {
+        font-size: 1em;
+    }
+
+}
+
+
+/*POUR STYLISER LE PIED*/
+
+@media screen and (max-width: 400px) {
+    
+    footer {
+        height: 3.5%;
+    }
+
+    footer p {
+        font-size: 0.8em;
+        letter-spacing: -1px;
+    }
+
+}
