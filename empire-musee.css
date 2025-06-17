@@ -17,6 +17,21 @@ header {
     padding:  20px 40px;
     position: fixed;
 }
+
+header.sticky {
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+header.sticky .logo {
+    color: black;
+}
+
+header.sticky .navbarre ul li a {
+    color: black;
+}
+
 header nav {
     display: flex;
     align-items: center;
@@ -172,6 +187,7 @@ header nav .navbarre ul li a:hover {
     color: white;
     font-size: 1.5em;
     font-weight: 400;
+    text-align: justify;
 }
 
 .apropos {
@@ -199,6 +215,7 @@ header nav .navbarre ul li a:hover {
 .apropos .bloque1 .texte p {
     font-size: 1em;
     margin: 20px 0px;
+    text-align: justify;
 }
 
 .apropos .bloque1 .texte p span {
@@ -244,6 +261,7 @@ header nav .navbarre ul li a:hover {
 
 .empire .sujet p {
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .empire .sujet .site {
@@ -291,6 +309,11 @@ footer p a:hover {
     header {
         padding: 10px;
     }
+
+    header.sticky button {
+        color: black;
+    }
+
 
     header nav {
         padding: 0px;

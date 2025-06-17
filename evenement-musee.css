@@ -17,6 +17,21 @@ header {
     padding:  20px 40px;
     position: fixed;
 }
+
+header.sticky {
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+header.sticky .logo {
+    color: black;
+}
+
+header.sticky .navbarre ul li a {
+    color: black;
+}
+
 header nav {
     display: flex;
     align-items: center;
@@ -242,8 +257,8 @@ header nav .navbarre ul li a:hover {
 }
 
 .apropos .contenu .bloque .style {
-    width: 10em;
-    height: 10em;
+    width: 8em;
+    height: 8em;
 }
 
 .apropos .contenu .bloque .style img {
@@ -252,7 +267,7 @@ header nav .navbarre ul li a:hover {
 }
 
 .apropos .contenu .bloque .texte {
-    padding: 40px;
+    padding: 30px;
     text-align: center;
 }
 

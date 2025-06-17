@@ -17,6 +17,21 @@ header {
     position: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+header.sticky {
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+header.sticky .logo {
+    color: black;
+}
+
+header.sticky .navbarre ul li a {
+    color: black;
+}
+
 header nav {
     display: flex;
     align-items: center;
@@ -146,7 +161,7 @@ header nav .navbarre ul li a:hover {
 /*POUR STYLISE LE MAIN*/
 main{
     width: 100%;
-    padding: 50px 350px 0px 350px;
+    padding: 80px 350px 0px 350px;
 }
 
 .entre {
@@ -206,6 +221,7 @@ main{
     color: gray;
     font-size: 0.7em;
     font-weight: bold;
+    text-align: justify;
 }
 
 .entre .page .developpement {
@@ -221,6 +237,7 @@ main{
     font-size: 1em;
     font-weight: 400;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
 }
 
 .entre .page .developpement .image {
@@ -280,6 +297,7 @@ main{
     font-weight: 400;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px;
+    text-align: justify;
 }
 
 .entre .page .bloc .art {
@@ -304,6 +322,7 @@ main{
     font-weight: 400;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px;
+    text-align: justify;
 }
 
 .entre .page .bloc .liste ul li p span {
@@ -329,6 +348,7 @@ main{
     font-weight: 400;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px;
+    text-align: justify;
 }
 
 
