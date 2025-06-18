@@ -227,12 +227,11 @@ header nav .navbarre ul li a:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 100px;
 }
 
 .apropos .photo {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
 
 .apropos .photo img {
@@ -257,8 +256,8 @@ header nav .navbarre ul li a:hover {
 }
 
 .apropos .contenu .bloque .style {
-    width: 8em;
-    height: 8em;
+    width: 6em;
+    height: 6em;
 }
 
 .apropos .contenu .bloque .style img {
@@ -273,6 +272,7 @@ header nav .navbarre ul li a:hover {
 
 .apropos .contenu .bloque .texte p {
     font-size: 1.3em;
+    font-weight: 100;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -291,7 +291,86 @@ header nav .navbarre ul li a:hover {
     height: 100%;
 }
 
+.chapitre {
+    width: 100%;
+}
 
+.chapitre .sujet {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0px;
+    background-color: whitesmoke;
+}
+
+.chapitre .sujet .cadre {
+    width: 50%;
+    height: 110vh;
+}
+
+.chapitre .sujet .cadre img {
+    width: 100%;
+    height: 100%;
+}
+
+.chapitre .sujet .texte {
+    width: 50%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chapitre .sujet .texte h2 {
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+.chapitre .sujet .texte p {
+    padding: 0px 80px;
+    text-align: center;
+}
+
+.chapitre .sujet .texte a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1.5px solid black;
+}
+
+.chapitre .sujet .texte a:hover {
+    color: brown;
+    border-bottom: 1.5px solid brown;
+}
+
+.chapitre .oeuvre {
+    width: 100%;
+    margin: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.chapitre .oeuvre .tableau {
+    width: 40%;
+}
+
+.chapitre .oeuvre .tableau img {
+    width: 100%;
+    height: 95vh;
+    margin-bottom: 10px;
+}
+
+.chapitre .oeuvre .tableau p {
+    color: gray;
+    font-style: italic;
+    font-family: serif;
+}
 
 
 /*POUR STYLISER LE PIED*/
