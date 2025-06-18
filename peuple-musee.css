@@ -253,6 +253,31 @@ main {
     font-style: italic;
 }
 
+.presentation .oeuvre {
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.presentation .oeuvre .tableau {
+    width: 40%;
+}
+
+.presentation .oeuvre .tableau img {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 10px;
+}
+
+.presentation .oeuvre .tableau p {
+    color: gray;
+    font-style: italic;
+    font-family: serif;
+}
+
 /*POUR STYLISER LE PIED*/
 footer {
     width: 100%;
@@ -368,6 +393,21 @@ footer p a:hover {
     .presentation .langue p {
         font-size: 0.7em;
     }
+
+    .presentation .oeuvre {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .presentation .oeuvre .tableau {
+        width: 100%;
+    }
+
+    .presentation .oeuvre .tableau img {
+        height: 40vh;
+        margin-bottom: 5px;
+    }
+
 }
 
 /*POUR STYLISER LE PIED*/
