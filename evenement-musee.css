@@ -19,7 +19,7 @@ header {
 }
 
 header.sticky {
-    background: white;
+    background: whitesmoke;
     padding: 10px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
@@ -223,10 +223,11 @@ header nav .navbarre ul li a:hover {
 
 .apropos {
     width: 100%;
-    margin-top: 30px;
+    margin: 30px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 40px;
 }
 
 .apropos .photo {
@@ -248,11 +249,11 @@ header nav .navbarre ul li a:hover {
 
 .apropos .contenu .bloque {
     width: 50%;
-    width: 110vh;
+    height: 110vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 150px;
+    padding: 150px 0px;
 }
 
 .apropos .contenu .bloque .style {
@@ -266,7 +267,7 @@ header nav .navbarre ul li a:hover {
 }
 
 .apropos .contenu .bloque .texte {
-    padding: 30px;
+    padding: 60px;
     text-align: center;
 }
 
@@ -452,7 +453,7 @@ footer p a:hover {
 @media screen and (max-width: 400px) {
 
     .presentation {
-        height: 30vh;
+        height: 25vh;
     }
 
     .presentation .titre {
@@ -460,28 +461,103 @@ footer p a:hover {
     }
 
     .presentation .titre h1 {
-        font-size: 2.4em;
+        font-size: 2.2em;
     }
 
     .presentation .titre p {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .proposition {
+        display: none;
         padding: 10px 20px;
     }
 
-    .proposition .chapitre ul {
+    .apropos {
+        gap: 10px;
+    }
+
+    .apropos .photo {
+        height: 35vh;
+    }
+
+    .apropos .contenu {
         flex-direction: column;
         gap: 20px;
     }
 
-    .proposition .chapitre ul li {
-        padding: 7px;
+    .apropos .contenu .bloque {
+        width: 100%;
+        height: 60vh;
+        padding: 10px;
     }
 
-    .proposition .chapitre ul li a {
+    .apropos .contenu .bloque .style {
+        width: 4em;
+        height: 4em;
+    }
+
+    .apropos .contenu .bloque .texte {
+        padding: 15px;
+    }
+
+    .apropos .contenu .bloque .texte p {
         font-size: 1em;
+    }
+
+    .apropos .contenu .image {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .chapitre .sujet {
+        flex-direction: column;
+        padding: 20px 0px;
+        gap: 20px;
+    }
+
+    .chapitre .sujet .cadre {
+        width: 100%;
+        height: 60vh;
+        padding: 15px;
+    }
+
+    .chapitre .sujet .texte {
+        width: 100%;
+        height: 60vh;
+        gap: 10px;
+    }
+
+    .chapitre .sujet .texte h2 {
+        font-size: 1em;
+    }
+
+    .chapitre .sujet .texte p {
+        padding: 0.7px;
+    }
+
+    .chapitre .sujet .texte a {
+        font-size: 0.8em;
+    }
+
+    .chapitre .oeuvre {
+        flex-direction: column;
+        margin: 20px 0px;
+        gap: 5px;
+    }
+
+    .chapitre .oeuvre .tableau {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .chapitre .oeuvre .tableau img {
+        height: 40vh;
+        margin-bottom: 5px;
+    }
+
+    .chapitre .oeuvre .tableau p {
+        font-size: 0.7em;
     }
 
 }

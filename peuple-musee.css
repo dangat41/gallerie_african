@@ -20,7 +20,7 @@ header {
 }
 
 header.sticky {
-    background: white;
+    background: whitesmoke;
     padding: 10px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
@@ -228,12 +228,6 @@ main {
     text-align: justify;
 }
 
-.presentation {
-    width: 100%;
-    padding: 30px 0px;
-    padding: 30px 0px 5px 0px;
-}
-
 .presentation .langue {
     margin-bottom: 25px;
 }
@@ -255,7 +249,7 @@ main {
 
 .presentation .oeuvre {
     width: 100%;
-    margin: 50px 0px 0px 0px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -276,6 +270,63 @@ main {
     color: gray;
     font-style: italic;
     font-family: serif;
+}
+
+.peuple {
+    width: 100%;
+}
+
+.peuple .intro {
+    margin: 30px 0px;
+}
+
+.peuple .intro p {
+    padding: 10px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.peuple .intro img {
+    width: 100%;
+    height: 40vh;
+}
+
+.peuple .intro h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.peuple .tribus {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.peuple .tribus ul {
+    list-style: none;
+}
+
+.peuple .tribus ul li {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.peuple .conclu {
+    margin-bottom: 30px;
+}
+
+.peuple .conclu h4 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.peuple .conclu p {
+    font-weight: 400;
+    text-align: justify;
 }
 
 /*POUR STYLISER LE PIED*/
@@ -361,8 +412,21 @@ footer p a:hover {
         padding: 20px 20px 0 20px;
     }
 
+    .accueil{
+        padding: 20px 0px;
+    }
+
     .accueil h1 {
         font-size: 1.3em;
+        margin: 10px 0px;
+    }
+
+    .accueil .oeuvre {
+        gap: 5px;
+    }
+
+    .accueil .oeuvre .hauteur {
+        gap: 5px;
     }
 
     .accueil .oeuvre .hauteur img {
@@ -382,12 +446,22 @@ footer p a:hover {
         height: 200px;
     }
 
+    .presentation {
+        padding: 15px 0px 3px 0px;
+    }
+
     .presentation p {
         font-size: 0.7em;
+        margin-bottom: 10px;
+    }
+
+    .presentation .langue {
+        margin-bottom: 15px;
     }
 
     .presentation .langue h2 {
         font-size: 1em;
+        margin-bottom: 10px;
     }
 
     .presentation .langue p {
@@ -396,6 +470,7 @@ footer p a:hover {
 
     .presentation .oeuvre {
         flex-direction: column;
+        margin-top: 15px;
         gap: 10px;
     }
 
@@ -406,6 +481,48 @@ footer p a:hover {
     .presentation .oeuvre .tableau img {
         height: 40vh;
         margin-bottom: 5px;
+    }
+
+    .peuple .intro {
+        margin: 15px 0px;
+    }
+
+    .peuple .intro p {
+        padding: 5px;
+        font-size: 0.7em;
+        margin-bottom: 10px;
+    }
+
+    .peuple .intro img {
+        height: 25vh;
+    }
+
+    .peuple .intro h2 {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .peuple .tribus {
+        padding-bottom: 3px;
+    }
+
+    .peuple .tribus ul li {
+        margin-bottom: 7px;
+        font-size: 0.7em;
+        padding: 5px;
+    }
+
+    .peuple .conclu {
+        margin-bottom: 15px;
+    }
+
+    .peuple .conclu h4 {
+        font-size: 0.85em;
+        margin-bottom: 5px;
+    }
+
+    .peuple .conclu p {
+        font-size: 0.7em;
     }
 
 }
