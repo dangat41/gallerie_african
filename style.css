@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*POUR STYLISE L'EN TETE*/
+
+header {
+    width: 100%;
+    padding:  20px 40px;
+    position: fixed;
+}
+
+header.sticky {
+    background: whitesmoke;
+    padding: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+header.sticky .logo {
+    color: black;
+}
+
+header.sticky .navbarre ul li a {
+    color: black;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav button {
+    display: none;
+    background: transparent;
+    font-size: 2em;
+    border: none;
+    color: white;
+}
+
+header nav .logo {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+header nav .logo img {
+    width: 2em;
+    height: 2em;
+    border-radius: 3em;
+}
+
+header nav .logo h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+header nav .navbarre {
+    background: transparent;
+    border-radius: 2em;
+}
+
+header nav .navbarre ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav .navbarre ul li {
+    display: block;
+}
+
+header nav .navbarre ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+
+header nav .navbarre ul li a:hover {
+    color: brown;
+    border-bottom: 2px solid brown;
+}
+
+#navbarre {
+    display:none;
+    flex-direction: row;
+    align-items: start;
+    background-color:rgba(0, 0, 1, 0.562);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    padding: 10px 20px;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+}
+
+.menucacher {
+    background-color: white;
+    height: 100%;
+    padding: 10px;
+    width: 300px;
+    padding-top: 0;
+    font-size: 18px;
+}
+
+.liste {
+    list-style: none;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 35px;
+    gap: 20px;
+}
+
+.liste a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 900;
+
+}
+
+.liste a:hover {
+    color: brown;
+    border-bottom: 1.2px solid brown;
+}
+
+.suite .listes {
+    margin-top: 20px;
+    gap: 20px;
+    border-bottom: none;
+}
+
+.suite .listes .liste a {
+    text-decoration: none;
+    color: brown;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.suite .listes .liste a:hover {
+    color: gray;
+    border-bottom: 1.2px solid gray;
+}
+
+
+/*POUR STYLISE LE CORPS*/
+#accueil {
+    max-width: 100%;
+    height: 96.5vh;
+    padding: 150px 50px;
+    flex-direction: column;
+    background: url(./img-musee/img-accueil3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#accueil .titre {
+    width: 100%;
+    color: white;
+}
+
+#accueil .titre h1 {
+    font-size: 5em;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+#accueil .presentation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+#accueil .presentation .collection {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px dashed black;
+    padding: 30px 0px;
+}
+
+#accueil .presentation .collection img {
+    width: 400px;
+    height: 200px;
+}
+
+#accueil .presentation .collection h2 {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#accueil .presentation .collection a {
+    padding: 5px;
+    color: brown;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-bottom: 2px solid brown;
+}
+
+#accueil .presentation .collection a:hover {
+    color: white;
+    background: rgb(180, 79, 79);
+    border-bottom: none;
+}
+
+
+/*POUR STYLISER LE PIED*/
+footer {
+    width: 100%;
+    height: 3.5vh;
+    background: rgb(180, 79, 79);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    font-style: italic;
+}
+
+footer p a:hover {
+    color: rgb(242, 197, 197);
+}
+
+
+
+/*POUR STYLISER L'EN TETE*/
+
+@media screen and (max-width: 400px) {
+    header {
+        padding: 10px;
+    }
+
+    header.sticky button {
+        color: black;
+    }
+
+    header nav {
+        padding: 0px;
+    }
+
+    header nav button {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    header nav .logo h1 {
+        font-size: 1em;
+        letter-spacing: -1px;
+    }
+
+    header nav .logo img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .menucacher {
+        width: 200px;
+    }
+
+    .listes {
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .liste a {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    header nav .navbarre {
+        display: none;
+    }
+
+}
+
+
+/*POUR STYLISER LE CORP*/
+
+@media screen and (max-width: 400px) {
+
+     #accueil {
+        height: 96.5%;
+        padding: 60px 20px;
+    }
+
+    #accueil .titre h1 {
+        font-size: 2.3em;
+    }
+
+    #accueil .presentation {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    #accueil .presentation .collection {
+        width: 300px;
+        padding: 20px;
+    }
+    
+    #accueil .presentation .collection h2 {
+        letter-spacing: -1px;
+    }
+
+    #accueil .presentation .collection a {
+        letter-spacing: -1px;
+    }
+
+    #accueil .presentation .collection img {
+        width: 250px;
+        height: 130px;
+    }
+
+    header .musee a:hover {
+        letter-spacing: none;
+        background: rgb(180, 79, 79);
+    }
+
+}
+
+
+/*POUR STYLISER LE PIED*/
+
+@media screen and (max-width: 400px) {
+    
+    footer {
+        height: 3.5%;
+    }
+
+    footer p {
+        font-size: 0.8em;
+        letter-spacing: -1px;
+    }
+
+}

@@ -3,34 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>musée</title>
-    <link rel="stylesheet" href="musee.css">
+    <title>Musée</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
 
-        <div class="logo">
-            <img src="https://i.pinimg.com/736x/5f/0b/f3/5f0bf3321d8bad1ec8dedc873fc113de.jpg" alt="logo">
-            <h1>GALERIE AFRIKA</h1>
-        </div>
-
         <nav>
 
-            <ul>
-                <li><a href="./collection-musee.html">Collection</a></li>
-                <li><a href="./empure-musee.html">Empure</a></li>
-                <li><a href="./histoire-musee.html">Histoire</a></li>
-                <li><a href="./source-musee.html">Ressource</a></li>
-            </ul>
-            
+            <button id="bouton">&#9776;</button>
+
+            <div class="logo">
+                <img src="./img-musee/logo01.jpg" alt="logo">
+                <h1>GALERIE AFRIKA</h1>
+            </div>
+
+            <div class="navbarre">
+
+                <ul class="listes">
+                    <li class="liste"><a href="./index.html">Accueil</a></li>
+                    <li class="liste"><a href="./collection-musee.html">Collection</a></li>
+                    <li class="liste"><a href="./evenement-musee.html">Evenement</a></li>
+                    <li class="liste"><a href="./empire-musee.html">Empire</a></li>
+                    <li class="liste"><a href="./histoire-musee.html">Histoire</a></li>
+                </ul>
+
+            </div>
+
         </nav>
 
-        <div class="musee">
-            <a href="#">MUSEE D'AFRIQUE</a>
-        </div>
-
     </header>
+
+    <div id="navbarre">
+
+       <div class="menucacher">
+
+            <ul class="listes">
+                <li class="liste"><a href="./index.html">Accueil</a></li>
+                <li class="liste"><a href="./collection-musee.html">Collection</a></li>
+                <li class="liste"><a href="./evenement-musee.html">Evenement</a></li>
+                <li class="liste"><a href="./empire-musee.html">Empire</a></li>
+                <li class="liste"><a href="./histoire-musee.html">Histoire</a></li>
+            </ul>
+
+            <div class="suite">
+
+                <ul class="listes">
+                    <li class="liste"><a href="./source-musee.html">RESSOURCE</a></li>
+                    <li class="liste"><a href="./museographie.html">MUSÉOGRAPHIE</a></li>
+                    <li class="liste"><a href="./peuple-musee.html">PEUPLE</a></li>
+                </ul>
+
+            </div>
+
+       </div>
+
+    </div>
 
     <main>
 
@@ -47,21 +76,21 @@
             <div class="presentation">
 
                 <div class="collection">
-                    <img src="./img-musee/img-art-antique.jpg" alt="image">
-                    <h2>EVENEMENT</h2>
-                    <a href="#">EN SAVOIR PLUS</a>
+                    <img src="./img-musee/evenement.jpg" alt="image">
+                    <h2>RESSOURCE</h2>
+                    <a href="./source-musee.html">EN SAVOIR PLUS</a>
                 </div>
 
                 <div class="collection">
-                    <img src="./img-musee/img-art-antique.jpg" alt="image">
-                    <h2>NOS OEUVRES</h2>
-                    <a href="#">VOIR LES OEUBRES</a>
+                    <img src="./img-musee/oeuvrexx.jpg" alt="image">
+                    <h2>MUSÉOGRAPHIE AFRICAINE</h2>
+                    <a href="./museographie.html">EN SAVOIR PLUS</a>
                 </div>
 
                 <div class="collection">
-                    <img src="./img-musee/img-art-antique.jpg" alt="image">
-                    <h2>OEVRE DU JOUR</h2>
-                    <a href="#">EN SAVOIR PLUS</a>
+                    <img src="./img-musee/peuple.jpg" alt="image">
+                    <h2>PEUPLE</h2>
+                    <a href="./peuple-musee.html">EN SAVOIR PLUS</a>
                 </div>
 
             </div>
@@ -76,5 +105,12 @@
 
     </footer>
 
+    <script src="./musee.js"></script>
+
 </body>
+
+<script>
+    
+</script>
+
 </html>
