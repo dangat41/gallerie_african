@@ -1,9 +1,10 @@
-const menu = document.getElementById("bouton");
-const listes = document.getElementById("navbarre");
+const menuhamburger = document.querySelector(".menu-hamburger")
+const navbarre = document.querySelector(".nav-liste")
 
-menu.addEventListener("click", function() {
-    listes.style.display = "flex";
+menuhamburger.addEventListener('click',()=>{
+    navbarre.classList.toggle('mobile-menu')
 })
+
 
 
 window.addEventListener('scroll', function(){

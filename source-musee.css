@@ -6,6 +6,7 @@
 
 body {
     color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -15,21 +16,12 @@ header {
     width: 100%;
     padding:  20px 40px;
     position: fixed;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header.sticky {
     background: whitesmoke;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-}
-
-header.sticky .logo {
-    color: black;
-}
-
-header.sticky .navbarre ul li a {
-    color: black;
 }
 
 header nav {
@@ -38,23 +30,10 @@ header nav {
     justify-content: space-between;
 }
 
-header nav button {
-    display: none;
-    background: transparent;
-    font-size: 2em;
-    border: none;
-    color: black;
-}
-
 header nav .logo {
-    color: black;
+    color: gray;
     display: flex;
     align-items: center;
-}
-
-header nav .logo h1 {
-    font-size: 1.5em;
-    font-weight: 700;
 }
 
 header nav .logo img {
@@ -63,99 +42,42 @@ header nav .logo img {
     border-radius: 3em;
 }
 
-header nav .navbarre {
-    background: transparent;
-    border-radius: 2em;
+header nav .logo h1 {
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
-header nav .navbarre ul {
+header nav .nav-liste {
+    background: transparent;
+}
+
+header nav .nav-liste ul {
+    list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    list-style: none;
-    gap: 30px;
+    gap: 40px;
 }
 
-header nav .navbarre ul li {
-    display: block;
-}
-
-header nav .navbarre ul li a {
+header nav .nav-liste ul a {
     text-decoration: none;
-    color: black;
+    color: gray;
     font-size: 1.2em;
     font-weight: 700;
 }
 
-
-header nav .navbarre ul li a:hover {
+header nav .nav-liste ul li a:hover {
     color: brown;
     border-bottom: 2px solid brown;
 }
 
-#navbarre {
-    display:none;
-    flex-direction: row;
-    align-items: start;
-    background-color:rgba(0, 0, 1, 0.562);
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    padding: 10px 20px;
-    margin: 0;
-    padding: 0;
-    padding-top: 0;
+nav .menu-hamburger {
+    background-color: rgba(128, 128, 128, 0.63);
+    display: none;
 }
 
-.menucacher {
-    background-color: white;
-    height: 100%;
-    padding: 10px;
-    width: 300px;
-    padding-top: 0;
-    font-size: 18px;
-}
-
-.liste {
-    list-style: none;
-    margin: 5px;
-    padding: 5px 10px;
-    border-radius: 35px;
-    gap: 20px;
-}
-
-.liste a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.2em;
-    font-weight: 900;
-}
-
-.liste a:hover {
-    color: brown;
-    border-bottom: 1.2px solid brown;
-}
-
-.suite .listes {
-    margin-top: 20px;
-    gap: 20px;
-    border-bottom: none;
-}
-
-.suite .listes .liste a {
-    text-decoration: none;
-    color: brown;
-    font-size: 1em;
-    font-weight: 900;
-}
-
-.suite .listes .liste a:hover {
-    color: gray;
-    border-bottom: 1.2px solid gray;
+nav .menu-hamburger img {
+    width: 1.5em;
 }
 
 /*POUR STYLISE LE MAIN*/
@@ -383,16 +305,21 @@ footer p a:hover {
 
 @media screen and (max-width: 400px) {
     header {
-        padding: 10px;
+        padding: 0px;
+    }
+
+    header.sticky button {
+        color: black;
     }
 
     header nav {
         padding: 0px;
     }
 
-    header nav button {
-        display: block;
-        font-size: 1.5em;
+    header nav .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
     }
 
     header nav .logo h1 {
@@ -405,26 +332,39 @@ footer p a:hover {
         height: 1.5em;
     }
 
-    header nav .navbarre {
-        display: none;
+    header nav .nav-liste {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(8px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -100%;
+        transition: all 0.3s ease;
     }
 
-    .menucacher {
-        width: 200px;
+    nav .nav-liste.mobile-menu {
+        margin-left: 0;
     }
 
-    .listes {
-        padding-bottom: 20px;
-        border-bottom: 1px solid black;
+    header nav .nav-liste ul {
+        flex-direction: column;
+        gap: 80px;
     }
 
-    .liste a {
-        font-size: 1em;
-        font-weight: 500;
+    header nav .nav-liste ul a {
+        font-size: 1.7em;
     }
 
-    .suite .listes .liste a {
-        font-size: 1em;
+    nav .menu-hamburger {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
 
 }
