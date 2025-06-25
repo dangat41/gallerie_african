@@ -295,7 +295,53 @@ nav .menu-hamburger img {
 
 
 /*POUR STYLISER LE PIED*/
+
 footer {
+    width: 100%;
+}
+
+footer .pied {
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(220, 220, 220, 0.293);
+}
+
+footer .pied .reseaux {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .pied .reseaux .sociaux {
+    margin: 20px;
+}
+
+footer .pied .reseaux .sociaux h1 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+footer .pied .reseaux .reseau ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer .pied .reseaux .reseau ul a {
+    text-decoration: none;
+}
+
+footer .pied .reseaux .reseau ul a img {
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
+}
+
+
+footer .copyright {
     width: 100%;
     height: 3.5vh;
     background: rgb(180, 79, 79);
@@ -304,19 +350,19 @@ footer {
     justify-content: center;
 }
 
-footer p {
+footer .copyright p {
     font-size: 1.2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-footer p a {
+footer .copyright p a {
     color: black;
     text-decoration: none;
     font-weight: 900;
     font-style: italic;
 }
 
-footer p a:hover {
+footer .copyright p a:hover {
     color: rgb(242, 197, 197);
 }
 
