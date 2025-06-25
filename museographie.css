@@ -390,20 +390,36 @@ footer .copyright p a:hover {
     
 }
 
-
-
-
-
-
 /*POUR STYLISER LE PIED*/
 
 @media screen and (max-width: 400px) {
-    
-    footer {
-        height: 3.5%;
+
+    footer .pied {
+        height: 10vh;
     }
 
-    footer p {
+    footer .pied .reseaux .sociaux {
+        margin: 10px;
+    }
+
+    footer .pied .reseaux .sociaux h1 {
+        font-size: 1em;
+    }
+
+    footer .pied .reseaux .reseau ul {
+        gap: 20px;
+    }
+
+    footer .pied .reseaux .reseau ul a img {
+        width: 2em;
+        height: 2em;
+    }
+
+    footer .copyright {
+        height: 2vh;
+    }
+
+    footer .copyright p {
         font-size: 0.8em;
         letter-spacing: -1px;
     }
