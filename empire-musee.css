@@ -20,7 +20,7 @@ header {
 
 header.sticky {
     background: whitesmoke;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -31,7 +31,7 @@ header nav {
 }
 
 header nav .logo {
-    color: gray;
+    color: brown;
     display: flex;
     align-items: center;
 }
@@ -61,13 +61,12 @@ header nav .nav-liste ul {
 
 header nav .nav-liste ul a {
     text-decoration: none;
-    color: gray;
+    color: brown;
     font-size: 1.2em;
     font-weight: 700;
 }
 
 header nav .nav-liste ul li a:hover {
-    color: brown;
     border-bottom: 2px solid brown;
 }
 
@@ -231,8 +230,8 @@ footer p a:hover {
         padding: 0px;
     }
 
-    header.sticky button {
-        color: black;
+    header.sticky {
+        padding: 20px;
     }
 
     header nav {

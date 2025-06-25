@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*POUR STYLISE L'EN TETE*/
+
+header {
+    width: 100%;
+    padding:  10px 40px;
+    position: fixed;
+}
+
+header.sticky {
+    background: whitesmoke;
+    padding: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo {
+    color: brown;
+    display: flex;
+    align-items: center;
+}
+
+header nav .logo img {
+    width: 2em;
+    height: 2em;
+    border-radius: 3em;
+}
+
+header nav .logo h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+header nav .nav-liste {
+    background: transparent;
+}
+
+header nav .nav-liste ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+header nav .nav-liste ul a {
+    text-decoration: none;
+    color: brown;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+header nav .nav-liste ul li a:hover {
+    border-bottom: 2px solid brown;
+}
+
+nav .menu-hamburger {
+    background-color: rgba(128, 128, 128, 0.63);
+    display: none;
+}
+
+nav .menu-hamburger img {
+    width: 1.5em;
+}
+
+/* POUR LE CORP */
+
+.collection {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.collection .bloque {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    border: 1px dashed black;
+}
+
+.collection .bloque .oeuvre {
+    width: 50%;
+    height: 90vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.collection .bloque .oeuvre img {
+    width: 100%;
+    height: 100%;
+}
+
+.collection .bloque .oeuvre .contenu1 {
+    padding: 30px 90px;
+    text-align: left;
+}
+
+.collection .bloque .oeuvre .contenu2 {
+    padding: 30px 90px;
+}
+
+.collection .bloque .oeuvre .contenu2 h2 {
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.collection .bloque .oeuvre .contenu2 p {
+    text-align: right;
+}
+
+.collection .bloque .oeuvre2 {
+    width: 50%;
+    height: 90vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.collection .bloque .oeuvre2 p {
+    padding: 40px;
+    text-align: justify;
+}
+
+
+
+
+/*POUR STYLISER LE PIED*/
+footer {
+    width: 100%;
+    height: 3.5vh;
+    background: rgb(180, 79, 79);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    font-style: italic;
+}
+
+footer p a:hover {
+    color: rgb(242, 197, 197);
+}
+
+
+
+/*POUR STYLISER L'EN TETE*/
+
+@media screen and (max-width: 400px) {
+    header {
+        padding: 0px;
+    }
+
+    header.sticky {
+        padding: 20px;
+    }
+    header nav {
+        padding: 0px;
+    }
+
+    header nav .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    header nav .logo h1 {
+        font-size: 1em;
+        letter-spacing: -1px;
+    }
+
+    header nav .logo img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    header nav .nav-liste {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(8px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -100%;
+        transition: all 0.3s ease;
+    }
+
+    nav .nav-liste.mobile-menu {
+        margin-left: 0;
+    }
+
+    header nav .nav-liste ul {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    header nav .nav-liste ul a {
+        font-size: 1.7em;
+    }
+
+    nav .menu-hamburger {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+}
+
+
+/*POUR STYLISER LE CORP*/
+
+@media screen and (max-width: 400px) {
+
+    .collection {
+        padding: 50px 10px 10px 10px;
+    }
+
+    .collection .bloque {
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .collection .bloque .oeuvre {
+        width: 100%;
+        height: 45vh;
+        gap: 30px;
+    }
+
+    .collection .bloque .oeuvre .contenu1 {
+        padding: 10px;
+    }
+
+    .collection .bloque .oeuvre .contenu1 p {
+        font-size: 0.7em;
+    }
+
+    .collection .bloque .oeuvre .contenu2 {
+        padding: 10px;
+    }
+
+    .collection .bloque .oeuvre .contenu2 h2 {
+        font-size: 1em;
+        margin-bottom: 7px;
+    }
+
+    .collection .bloque .oeuvre .contenu2 p {
+        font-size: 0.7em;
+    }
+
+    .collection .bloque .oeuvre2 {
+        width: 100%;
+        height: 45vh;
+        gap: 30px;
+    }
+
+    .collection .bloque .oeuvre2 p {
+        padding: 20px;
+        font-size: 0.7em;
+    }
+
+}
+
+
+/*POUR STYLISER LE PIED*/
+
+@media screen and (max-width: 400px) {
+    
+    footer {
+        height: 3.5%;
+    }
+
+    footer p {
+        font-size: 0.8em;
+        letter-spacing: -1px;
+    }
+
+}
