@@ -417,7 +417,7 @@ footer .copyright p a:hover {
 @media screen and (max-width: 500px) {
     
     main {
-        width: 400px;
+        width: 100%;
         padding: 50px 40px 0px 40px;
     }
 
