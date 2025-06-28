@@ -131,13 +131,14 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
     margin-bottom: 20px;
 }
 
 .musee .afrique .pays {
-    width: 33%;
-    height: 60vh;
+    width: 30%;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,7 +257,7 @@ footer .copyright p a:hover {
 
 /*POUR STYLISER L'EN TETE*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     header {
         padding: 0px;
     }
@@ -324,7 +325,7 @@ footer .copyright p a:hover {
 
 /* POUR LE CORPS */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
     .accueil {
         height: 30vh;
@@ -362,7 +363,7 @@ footer .copyright p a:hover {
 
     .musee .afrique .pays {
         width: 100%;
-        height: 35vh;
+        height: 45vh;
     }
 
     .musee .afrique .pays .nom {
@@ -392,7 +393,7 @@ footer .copyright p a:hover {
 
 /*POUR STYLISER LE PIED*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
     footer .pied {
         height: 10vh;

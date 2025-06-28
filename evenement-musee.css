@@ -370,7 +370,7 @@ footer .copyright p a:hover {
 
 /*POUR STYLISER L'EN TETE*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     header {
         padding: 0px;
     }
@@ -438,7 +438,7 @@ footer .copyright p a:hover {
 
 
 /* POUR LE CORPS */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
     .presentation {
         height: 25vh;
@@ -553,7 +553,7 @@ footer .copyright p a:hover {
 
 /*POUR STYLISER LE PIED*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
     footer .pied {
         height: 10vh;

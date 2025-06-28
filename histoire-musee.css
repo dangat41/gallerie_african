@@ -345,7 +345,7 @@ footer .copyright p a:hover {
 }
 /* POUR LE CORP */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     header {
         padding: 0px;
     }
@@ -414,7 +414,7 @@ footer .copyright p a:hover {
 
 /*POUR STYLISER LE CORP*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .presentation .titre h1 {
         font-size: 2.5em;
         padding: 15px 0px;
@@ -550,7 +550,7 @@ footer .copyright p a:hover {
 
 /*POUR STYLISER LE PIED*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
     footer .pied {
         height: 10vh;
