@@ -293,7 +293,7 @@ footer .copyright p a:hover {
 
 @media screen and (max-width: 500px) {
 
-     #accueil {
+    #accueil {
         height: 96.5%;
         padding: 60px 20px;
     }
@@ -368,3 +368,4 @@ footer .copyright p a:hover {
     }
 
 }
+
