@@ -123,7 +123,7 @@ main {
 
 .musee {
     width: 100%;
-    padding: 50px;
+    padding: 50px 50px 10px 50px;
 }
 
 .musee .afrique {
@@ -132,13 +132,13 @@ main {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
-    margin-bottom: 20px;
+    gap: 20px;
 }
 
 .musee .afrique .pays {
     width: 30%;
     height: 75vh;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -357,7 +357,6 @@ footer .copyright p a:hover {
 
     .musee .afrique {
         gap: 20px;
-        flex-direction: column;
         margin-bottom: 10px;
     }
 
