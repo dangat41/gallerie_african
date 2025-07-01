@@ -166,6 +166,9 @@ footer .pied {
     width: 100%;
     height: 20vh;
     background-color: rgba(220, 220, 220, 0.293);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer .pied .reseaux {
@@ -384,6 +387,171 @@ footer .copyright p a:hover {
     footer .copyright p {
         font-size: 0.8em;
         letter-spacing: -1px;
+    }
+
+}
+
+
+/* POUR LE MAX 800px */
+
+@media screen and (max-width: 800px) {
+
+    header {
+        padding: 0px;
+    }
+
+    header.sticky {
+        padding: 30px;
+    }
+
+    header nav {
+        padding: 0px;
+    }
+
+    header nav .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    header nav .logo h1 {
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    }
+
+    header nav .logo img {
+        width: 1.8em;
+        height: 1.8em;
+    }
+
+    header nav .nav-liste {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(8px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -100%;
+        transition: all 0.3s ease;
+    }
+
+    nav .nav-liste.mobile-menu {
+        margin-left: 0;
+    }
+
+    header nav .nav-liste ul {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    header nav .nav-liste ul a {
+        font-size: 2em;
+    }
+
+    nav .menu-hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .menu-hamburger img {
+        width: 2em;
+    }
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    
+    .collection {
+        padding: 70px 15px 15px 15px;
+    }
+
+    .collection .bloque {
+        flex-direction: column;
+        gap: 15px;
+        padding: 8px;
+    }
+
+    .collection .bloque .oeuvre {
+        width: 100%;
+        height: 60vh;
+        gap: 40px;
+    }
+
+    .collection .bloque .oeuvre .contenu1 {
+        padding: 15px;
+    }
+
+    .collection .bloque .oeuvre .contenu1 p {
+        font-size: 1em;
+    }
+
+    .collection .bloque .oeuvre .contenu2 {
+        padding: 15px;
+    }
+
+    .collection .bloque .oeuvre .contenu2 h2 {
+        font-size: 1.3em;
+        margin-bottom: 11px;
+    }
+
+    .collection .bloque .oeuvre .contenu2 p {
+        font-size: 1em;
+    }
+
+    .collection .bloque .oeuvre2 {
+        width: 100%;
+        height: 60vh;
+        gap: 40px;
+    }
+
+    .collection .bloque .oeuvre2 p {
+        padding: 30px;
+        font-size: 1em;
+    }
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    footer .pied {
+        height: 15vh;
+    }
+
+    footer .pied .reseaux .sociaux {
+        margin: 13px;
+    }
+
+    footer .pied .reseaux .sociaux h1 {
+        font-size: 1.3em;
+    }
+
+    footer .pied .reseaux .reseau ul {
+        gap: 25px;
+    }
+
+    footer .pied .reseaux .reseau ul a img {
+        width: 2.4em;
+        height: 2.4em;
+    }
+
+    footer .copyright {
+        height: 2vh;
+    }
+
+    footer .copyright p {
+        font-size: 1em;
+        letter-spacing: 1px;
     }
 
 }
