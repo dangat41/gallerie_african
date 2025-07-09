@@ -66,6 +66,10 @@ header nav .nav-liste ul a {
     font-weight: 700;
 }
 
+header nav .nav-liste ul a span {
+    color: gray;
+}
+
 header nav .nav-liste ul li a:hover {
     border-bottom: 2px solid brown;
 }
