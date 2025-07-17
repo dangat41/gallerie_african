@@ -68,7 +68,7 @@ header nav .nav-liste ul a {
 }
 
 header nav .nav-liste ul a span {
-    color: gray;
+    color: black;
 }
 
 header nav .nav-liste ul li a:hover {
@@ -76,12 +76,11 @@ header nav .nav-liste ul li a:hover {
 }
 
 nav .menu-hamburger {
-    background-color: rgba(128, 128, 128, 0.63);
     display: none;
 }
 
-nav .menu-hamburger img {
-    width: 1.5em;
+nav .menu-hamburger h1 {
+    font-size: 1.5em;
 }
 
 /*POUR STYLISE LE CORPS*/
@@ -438,7 +437,7 @@ footer .copyright p a:hover {
     nav .menu-hamburger {
         display: block;
         position: absolute;
-        top: 10px;
+        top: 4px;
         right: 10px;
     }
 
